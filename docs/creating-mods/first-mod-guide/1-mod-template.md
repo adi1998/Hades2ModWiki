@@ -80,7 +80,7 @@ This is useful if you want to integrate with another mod and you *need* to load 
 Note that not every mod integration would require this and it should only be used if a specific load order is a desired.
 
 The entries in this component will follow the same format as the `[package.dependencies]` entries.
-If you want to use this feature, you'll need to use the `tcli` [fork](https://github.com/adi1998/thunderstore-cli/releases) locally for testing and update the workflow file `.github/workflows/release.yaml` with this [patch](https://github.com/adi1998/Hades2ModTemplate/commit/41983833c21bc792655d942d973102570e99ac4c).
+If you want to use this feature, you'll need to use the `tcli` [fork](https://github.com/adi1998/thunderstore-cli/releases) locally for testing and update the workflow file `.github/workflows/release.yaml` with this [patch](https://github.com/adi1998/Hades2ModTemplate/commit/41983833c21bc792655d942d973102570e99ac4c). This fork adds support for the custom field `rom_soft_deps` in the thunderstore.toml project file and the manifest.json it generates. It otherwise functions exactly the same. You can see how it differs from the original source [here](https://github.com/thunderstore-io/thunderstore-cli/compare/master...adi1998:thunderstore-cli:master).
 
 #### `[build]` sections
 
